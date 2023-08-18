@@ -10,3 +10,6 @@ while True:
     print("Enter your choice \n 1 - Rock \n 2 - Paper \n 3 - Scissors \n")
     # take the input from user
     choice=int(input("Enter your choice :"))
+    # looping until user enter invalid input
+    while choice > 3 or choice <1:
+      choice=int(input('Enter a valid choice please!'))
