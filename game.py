@@ -18,3 +18,8 @@ while True:
             print("Paper covers rock! You win!")
         else:
             print("Scissors cuts paper! You lose.")
+    elif player == "scissors":
+        if computer_choice == "paper":
+            print("Scissors cuts paper! You win!")
+        else:
+            print("Rock smashes scissors! You lose.")
