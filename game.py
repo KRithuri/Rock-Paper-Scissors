@@ -8,3 +8,8 @@ while True:
 
     if player == computer_choice:
         print(f"Both players selected {player}. It's a tie!")
+    elif player == "rock":
+        if computer_choice == "scissors":
+            print("Rock smashes scissors! You win!")
+        else:
+            print("Paper covers rock! You lose.")
