@@ -47,3 +47,8 @@ while True:
         comp_choice_name = 'scissoR'
     print("Computer choice is \n", comp_choice_name)
     print(choice_name,'Vs',comp_choice_name)
+
+    # we need to check of a draw
+    if choice == comp_choice:
+        print('Its a Draw',end="")
+        result="DRAW"
