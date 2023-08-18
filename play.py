@@ -32,4 +32,7 @@ while True:
     # of random module
     comp_choice = random.randint(1,3)
 
-    
+    # looping until comp_choice value
+    # is equal to the choice value
+    while comp_choice == choice:
+        comp_choice = random.randint(1,3)
