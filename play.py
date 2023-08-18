@@ -52,3 +52,41 @@ while True:
     if choice == comp_choice:
         print('Its a Draw',end="")
         result="DRAW"
+    
+    # condition for winning     
+    if (choice==1 and comp_choice==2):
+        print('paper wins =>',end="")
+        result='papeR'
+    elif (choice==2 and comp_choice==1):
+        print('paper wins =>',end="")
+        result='Paper'
+         
+       
+    if (choice==1 and comp_choice==3):
+        print('Rock wins =>\n',end= "")
+        result='Rock'
+    elif (choice==3 and comp_choice==1):
+        print('Rock wins =>\n',end= "")
+        result='rocK'
+         
+    if (choice==2 and comp_choice==3):
+        print('Scissors wins =>',end="")
+        result='scissoR'
+    elif (choice==3 and comp_choice==2):
+        print('Scissors wins =>',end="")
+        result='Rock'
+     # Printing either user or computer wins or draw
+    if result == 'DRAW':
+        print("<== Its a tie ==>")
+    if result == choice_name:
+        print("<== User wins ==>")
+    else:
+        print("<== Computer wins ==>")
+    print("Do you want to play again? (Y/N)")
+    # if user input n or N then condition is True
+    ans = input().lower
+    if ans =='n':
+        break
+# after coming out of the while loop
+# we print thanks for playing
+print("thanks for playing")
