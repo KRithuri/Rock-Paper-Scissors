@@ -36,3 +36,14 @@ while True:
     # is equal to the choice value
     while comp_choice == choice:
         comp_choice = random.randint(1,3)
+
+    # initialize value of comp_choice_name
+    # variable corresponding to the choice value
+    if comp_choice == 1:
+        comp_choice_name = 'rocK'
+    elif comp_choice == 2:
+        comp_choice_name = 'papeR'
+    else:
+        comp_choice_name = 'scissoR'
+    print("Computer choice is \n", comp_choice_name)
+    print(choice_name,'Vs',comp_choice_name)
