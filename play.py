@@ -26,3 +26,10 @@ while True:
        # print user choice
     print('User choice is \n',choice_name)
     print('Now its Computers Turn....')
+
+    # Computer chooses randomly any number
+    # among 1 , 2 and 3. Using randint method
+    # of random module
+    comp_choice = random.randint(1,3)
+
+    
